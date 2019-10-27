@@ -8,16 +8,21 @@
          initial-scale=1, user-scalable=no" />
         <meta name="description" content="" />
         <meta name="keywords" content="" />
+        <style type="text/css">
+            p.color {
+                color: #00f;
+                text-align: center;
+                font-size: 36px;
+            }
+        </style>
     </head>
 
     <body>
-        <div id="demo"></div>
+
+        <p id="demo">Hello Word</p>
 
         <script type="text/javascript">
-            document.getElementById("demo").innerHTML = "Hello Word";
-            document.getElementById("demo").style.color = "blue";
-            document.getElementById("demo").style.fontSize = "36px";
-            document.getElementById("demo").style.textAlign = "center";
+            document.getElementById('demo').classList.add('color');
             console.log(demo);
         </script>
     </body>
