@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>william resume</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,
+         initial-scale=1, user-scalable=no" />
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <style type="text/css">
+            div:nth-child(even) {
+                background: #fcc;
+                line-height: 30px;
+            }
+
+            div:nth-child(odd) {
+                background: #ccf;
+            }
+
+            p.colorboy {
+                color: blue;
+            }
+
+            p.colorgirl {
+                color: red;
+
+            }
+        </style>
+    </head>
+
+    <body>
+        <p id="demo">Hello Word2</p>
+        <div class="color">
+
+            <div id="user1">
+                <p id="name1"></p>
+                <p id="nature1"></p>
+                <p id="age1"></p>
+            </div>
+            <div id="user2">
+                <p id="name2"></p>
+                <p id="nature2"></p>
+                <p id="age2"></p>
+            </div>
+            <div id="user3">
+                <p id="name3"></p>
+                <p id="nature3"></p>
+                <p id="age3"></p>
+            </div>
+            <div id="user4">
+                <p id="name4"></p>
+                <p id="nature4"></p>
+                <p id="age4"></p>
+            </div>
+            <div id="user5">
+                <p id="name5"></p>
+                <p id="nature5"></p>
+                <p id="age5"></p>
+            </div>
+
+        </div>
+
+        <script type="text/javascript">
+
+
+            var userList = [{
+                name: 'bilsdfsdfl',
+                nature: 'boy',
+                age: 18
+            }, {
+                name: 'vivian',
+                nature: 'girl',
+                age: 16
+            }, {
+                name: 'cowboy',
+                nature: 'boy',
+                age: 15
+            }, {
+                name: 'luluwei',
+                nature: 'girl',
+                age: 17
+            }, {
+                name: 'kobebyr',
+                nature: 'boy',
+                age: 28
+            }];
+
+            for (i = 0; i < userList.length; i++) {
+                var nameValue = userList[i].name;
+                console.log("姓名:" + nameValue);
+                var natureValue = userList[i].nature;
+                console.log("性別:" + natureValue);
+                var ageValue = userList[i].age;
+                console.log("年齡" + ageValue);
+
+                var personName = "name" + (i + 1);
+                var personNature = "nature" + (i + 1);
+                var personAge = "age" + (i + 1);
+
+                document.getElementById(personName).innerHTML =
+                    "姓名:" + nameValue + "<br/>" + "年紀:" + ageValue;
+                document.getElementById(personNature).innerHTML =
+                    "性別:" + natureValue;
+                if (natureValue === "boy") {
+                    document.getElementById(personNature).classList.add('colorboy');
+                }
+                if (natureValue === "girl") {
+                    document.getElementById(personNature).classList.add('colorgirl');
+
+                }
+            }
+
+
+            /*
+
+                        var name = userList.map(x => x.name);
+                        var nameAll = name;
+                        console.log(nameAll);
+
+                        var nature = userList.map(x => x.nature);
+                        var natureAll = nature;
+                        console.log(natureAll)
+
+                        var age = userList.map(x => x.age);
+                        var ageAll = age;
+                        console.log(ageAll);
+
+
+                        '姓名：' + nameAll + '<br>' +
+                            '性別：' + natureAll + '<br>' +
+                            '年齡：' + ageAll;
+
+
+
+
+
+
+                        for (x = 0; x <= userList.length; x++) {
+                            var natureValue = userList[x].nature;
+                            var nature = "nature";
+                            var naturesum = "nature" + x;
+                            document.getElementById(naturesum).innerHTML = '姓名：' + natureValue;
+
+                        }
+
+
+                        for (x = 1; x <= userList.length; x++) {
+
+                            var ageValue = userList[x].ages;
+                            console.log(ageValue);
+
+
+
+
+                            var age = "age";
+                            var agesum = "age" + x;
+                            // console.log(sum);
+                            document.getElementById(agesum).innerHTML = '年齡：' + ageValue;
+                        }
+
+
+
+                        for (x = 1; x <= 5; x++) {
+
+
+                            var age = "age";
+                            var agesum = "age" + x;
+
+                            console.log(agesum);
+                            document.getElementById(agesum).innerHTML = '年齡：';
+                        }
+
+
+                        for (var i = 0; i < userList.length; i++) {
+                            var userName = userList[i].name;
+                            var naTure = userList[i].nature;
+                            var aGe = userList[i].age;
+
+            */
+
+        </script>
+    </body>
+
+</html>
