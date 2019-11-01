@@ -24,3 +24,9 @@
     var classList = ['第一班', '第二班', ..., 第十班];
   </code>
 </pre>
+
+### 5.建立加法運算器
+> 限制條件：建立計算機版型，0~9數字按鈕,+號按鈕,歸零C按鈕,等於按鈕
+<pre>
+<img src="./images/day5.png" style="zoom:40%" />
+</pre>
