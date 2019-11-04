@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>day5</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,
+    initial-scale=1,user-scalable=no" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <link rel="stylesheet" href="index5.css" />
+
+
+    </head>
+
+    <body>
+        <div class="container">
+            <div class=contentLeft>
+                <table>
+                    <tr>
+                        <input type="text" value="0" id="ans" />
+                    </tr>
+                    <tr>
+                        <td><input class="btn" type="button" value="7" onClick="numBu('7')"></td>
+                        <td><input class="btn" type="button" value="8" onClick="numBu('8')"></td>
+                        <td><input class="btn" type="button" value="9" onClick="numBu('9')"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="btn" type="button" value="4" onClick="numBu('4')"></td>
+                        <td><input class="btn" type="button" value="5" onClick="numBu('5')"></td>
+                        <td><input class="btn" type="button" value="6" onClick="numBu('6')"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="btn" type="button" value="1" onClick="numBu('1')"></td>
+                        <td><input class="btn" type="button" value="2" onClick="numBu('2')"></td>
+                        <td><input class="btn" type="button" value="3" onClick="numBu('3')"></td>
+                    </tr>
+                    <tr>
+                        <td><input class="btn" type="button" value="0" onClick="numBu('0')"></td>
+                        <td><input class="btn" type="button" value="."></td>
+                        <td><input class="btn_click" type="button" value="c" onClick="OAO()"></td>
+                    </tr>
+                </table>
+
+            </div>
+            <div class="contentRight">
+                <input class="btn" type="button" value="+" onClick="operBu('+')">
+                <input class="btn" type="button" value="-" onClick="operBu('-')">
+                <input class="btn" type="button" value="*" onClick="operBu('*')">
+                <input class="btn" type="button" value="/" onClick="operBu('/')">
+                <input class="btn" type="button" value="=" onClick="equal()">
+            </div>
+
+        </div>
+
+
+
+        <script type="text/javascript" src="index5.js">
+        </script>
+    </body>
+
+</html>
