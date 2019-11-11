@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>day5</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,
+    initial-scale=1,user-scalable=no" />
+        <meta name="keywords" content="" />
+        <meta name="description" content="" />
+        <style type="text/css">
+            .size {
+                width: 30px;
+                border: 1px none;
+                background-color: #000;
+                margin: 10px;
+                color: white;
+                text-align: center;
+                border-radius: 5px;
+                line-height: 30px;
+                cursor: pointer;
+
+            }
+
+            .sizeList {
+                display: flex;
+                justify-content: space-around;
+                width: 300px;
+                background-color: lightsteelblue;
+            }
+
+            .size:hover {
+                color: #000;
+                background-color: #fff;
+            }
+
+            .box1 {
+                display: inline-block;
+                width: 200px;
+                height: 150px;
+                background-color: #faa;
+            }
+
+            .box2 {
+                display: inline-block;
+                width: 200px;
+                height: 150px;
+                background-color: #aaf;
+            }
+
+            .productTitle {
+                padding: 20px;
+                background-color: #000;
+                color: #fff;
+                cursor: pointer;
+            }
+
+            .content {
+                display: none;
+            }
+
+            .fullScreen {
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 10;
+                background: rgba(0, 0, 0, .5);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .text {
+                max-width: 320px;
+                width: 400px;
+                height: 300x;
+                background-color: #fff;
+                padding: 5px;
+                position: relative;
+            }
+
+            .closeBtn {
+                position: absolute;
+                background-color: #000;
+                color: #f00;
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                right: 0px;
+                top: 0px;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 20%;
+            }
+        </style>
+
+
+    </head>
+
+    <body>
+        <hr />
+        <div class="sizeList">
+            <button id="xs" class="size" onclick="size('XS')">XS</button>
+            <button class="size" onclick="size('S')">S</button>
+            <button class="size" onclick="size('M')">M</button>
+            <button class="size" onclick="size('L')">L</button>
+            <button class="size" onclick="size('XL')">XL</button>
+        </div>
+
+
+        <h1 id="title">總價:</h1>
+        <p>1件100元,請輸入你的數量:</p>
+        <input type="number" id="text_input" value="0">
+        <h1 id="title2">size:</h1>
+
+
+
+        <select id="mySelect">
+            <option></option>
+            <option>黑色-S</option>
+            <option>黑色-M</option>
+            <option>黑色-L</option>
+            <option>黑色-XL</option>
+        </select>
+
+        <hr>
+
+        <hr>
+
+        <p id="sizeTxt">以下為jquery</p>
+        <hr>
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+
+        <div class="productTitle">產品介紹</div>
+        <div class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima consequuntur
+            dolorum quasi maioresamet, esse voluptatem cupiditate facilis, ex blanditiis
+            sest quae odio ad. Laborum exc.
+        </div>
+
+        <div class="fullScreen">
+            <div class="text">
+                <img src="../../resume/images/logo/lapasta.jpg" style="width: 100%">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore atque deleniti
+                    dolorem quidem totam at quasi, dicta exercitationem ducimus
+                    rerum! Aperiam esse odio quibusdam quo harum fuga eos laudanti
+                    um similique!</p>
+                <p style="color: #f00;">這是個蓋版廣告喔</p>
+                <a href="#" class="closeBtn">X</a>
+            </div>
+        </div>
+
+        <script src="text011.js">
+        </script>
+        <script src="../js/jquery.min.js">
+        </script>
+        <script>
+            $(document).ready(function () {
+                $(".box1").dblclick(function () {
+                    $(".box2").toggle();
+                })
+                $(".productTitle").click(function () {
+                    $(".content").toggle();
+                })
+                $('.closeBtn').click(function () {
+                    $(".fullScreen").hide();
+                })
+
+            })
+        </script>
+    </body>
+
+</html>
