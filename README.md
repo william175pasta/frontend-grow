@@ -33,3 +33,6 @@
 
 ### 6. 使用JQuery套件Ajax呼叫測試API，取得每個人資訊清單，用console顯示每個名稱
 > 限制條件：API Url https://jsonplaceholder.typicode.com/users
+
+### 7. 建立表格顯示個人名稱、電話、住址資訊
+> 限制條件：API Url https://jsonplaceholder.typicode.com/users
