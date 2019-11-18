@@ -36,3 +36,42 @@
 
 ### 7. 建立表格顯示個人名稱、電話、住址資訊
 > 限制條件：API Url https://jsonplaceholder.typicode.com/users
+
+### 8. 操作陣列基本功
+<pre>
+  將以下兩組陣列合併:
+  <code>
+    var list1 = [1,2,3,4,5];
+    var list2 = [6,7,8,9,10];
+  </code>
+</pre>
+<pre>
+  將名單移除Tom成員:
+  <code>
+    var nameList = ['Will', 'Jerry', 'Tom', 'Jack'];
+  </code>
+</pre>
+<pre>
+  將名單新增兩位成員分別為Mark、Bill在最後面。
+  <code>
+    var nameList = ['Will', 'Jerry', 'Tom', 'Jack'];
+  </code>
+</pre>
+<pre>
+  將Mark排在Jerry後，Bill排在Will前。
+  <code>
+    var nameList = ['Will', 'Jerry', 'Tom', 'Jack'];
+  </code>
+</pre>
+<pre>
+  產生基數列表清單:
+  <code>
+    var list = [1,3,5,7,...];
+  </code>
+</pre>
+<pre>
+  將陣列數值由大到小排列:
+  <code>
+    var list = [1,3,5,7,9,11];
+  </code>
+</pre>
