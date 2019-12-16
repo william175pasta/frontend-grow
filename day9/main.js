@@ -19,6 +19,10 @@ BackName.forEach((v) => {
     console.log(resultName)
 })
 
+
+
+
+
 let userList = ["姓名", "電話", "地址"]
 let liName = userList.map((value) => (
     ("<li>" + value + ":" + "</li>")
@@ -51,8 +55,30 @@ console.log(result12) //[1, 2, 3, 4, 5, 6, 7, 8]
 let array1 = ['hi', true, 66]
 let array2 = [10, 20, ...array1]
 console.log(array2)                // [10, 20, "hi", true, 66]
-console.log(...number2, ...array2) //5 6 7 8 10 20 "hi" true 66
+
+
+let ArrayAll = [...number1, ...number2, ...array1, ...array2] //ES6 可以直接... ,接起來 省下用concat()
+
+console.log([...number2, ...array2]) //5 6 7 8 10 20 "hi" true 66
 //延伸
 let str = '你66AA好嗎'
 let chars = [...str]
 console.log(chars) // ["你", "6", "6", "A", "A", "好", "嗎"]
+
+
+// ES6 -String Interpolation
+let userName = {
+    name1: 'Jerry',
+    name2: 'Bill'
+}
+let car = {
+    number: 5,
+    carName: 'BMW',
+    price: 100
+}
+
+let message = `Hello ${userName.name1} and ${userName.name2}! ${userName.name1} have ${car.number} cars , Pice:${car.price * car.number} `
+
+console.log(message) //Hello Jerry and Bill! Jerry have 5 cars , Pice:500 
+
+
