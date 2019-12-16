@@ -1,4 +1,4 @@
-
+//forEach和map
 let BackName = ["貓", "牛", "虎", "狗"]
 let FrontName = BackName.map((value, index) => ((index + "阿" + value)))
 console.log(FrontName) //["0阿貓", "1阿牛", "2阿虎", "3阿狗"]
@@ -18,9 +18,6 @@ BackName.forEach((v) => {
     let resultName = "阿" + v
     console.log(resultName)
 })
-
-
-
 
 
 let userList = ["姓名", "電話", "地址"]
