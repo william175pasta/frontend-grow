@@ -75,3 +75,7 @@
     var list = [1,3,5,7,9,11];
   </code>
 </pre>
+### 9. ES6箭頭函數(arrow function)
+1.forEach && map
+2.Spread Operator
+3.ES6 -String Interpolation
