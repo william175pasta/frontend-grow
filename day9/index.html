@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>PROGRESS BAR</title>
+    </head>
+
+    <body>
+        <h1>箭頭函數(arrow function)</h1>
+        <h2>forEach和map</h2>
+        <ul>
+            <li>odds = evens.map(v => v + 1)</li>
+            <li>pairs = evens.map(v => ({ even: v, odd: v + 1 }))</li>
+            <li>nums = evens.map((v, i) => v + i)</li>
+        </ul>
+        <ul>
+            <li>odds = evens.map(function (v) { return v + 1; });</li>
+            <li> pairs = evens.map(function (v) { return { even: v, odd: v + 1 }; });</li>
+            <li>nums = evens.map(function (v, i) { return v + i; });</li>
+        </ul>
+
+        <div>
+            <ul id="root1">
+            </ul>
+        </div>
+    </body>
+    <script src="main.js"></script>
+
+</html>
