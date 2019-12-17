@@ -79,3 +79,7 @@
 1.forEach && map
 2.Spread Operator
 3.ES6 -String Interpolation
+### 10.Destructuring Assignment
+1.Array Matching
+2.Class Inheritance 類繼承
+
