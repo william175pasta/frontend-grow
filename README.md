@@ -87,3 +87,6 @@
 ### 12.React Address Picker(地址選擇器)
 1. city,  district , postalCode (縣市，地區，郵政編碼)
            
+### 13.React Address Picker(地址選擇器)
+1. city,  district , postalCode (縣市，地區，郵政編碼)
+2.ReceiptType (發票類型)
