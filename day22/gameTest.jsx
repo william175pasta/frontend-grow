@@ -10,14 +10,13 @@ const useStyles = makeStyles(them => ({
         borderRadius: '15px',
         textAlign: 'center',
         fontSize: '20px',
-
     }
 
 }))
 
 const GameTest = () => {
     const classes = useStyles();
-    const [userCH, setUserCH] = useState()
+    const [userCH, setUserCH] = useState("")
     const [number, setNumber] = useState()
     const [computerCH, setComputerCH] = useState("")
     const [result, setResult] = useState()
@@ -35,7 +34,7 @@ const GameTest = () => {
     }, [result])
     //玩家選擇剪刀按鈕
     const shearsBTN = () => {
-        setUserCH("剪刀")
+
         alert("Loading...")
         if (computerCH == "剪刀") {
             setResult("平手")
@@ -48,12 +47,13 @@ const GameTest = () => {
         }
         console.log(`電腦 :  ${computerCH}`)
         setTimeout(() => {
-            alert(`電腦 : ${computerCH}  * 請按<<重新開始>>`)
+            alert(`電腦 :* ${computerCH} * 請按<<重新開始>>`)
         }, 500)
-        //玩家選擇石頭按鈕
+        setComputerCH("")
     }
+    //玩家選擇石頭按鈕
     const rockBTN = () => {
-        setUserCH("石頭")
+
         alert("Loading...")
         if (computerCH == "石頭") {
             setResult("平手")
@@ -66,12 +66,13 @@ const GameTest = () => {
         }
         console.log(`電腦 :  ${computerCH}`)
         setTimeout(() => {
-            alert(`電腦 : ${computerCH}  * 請按<<重新開始>>`)
+            alert(`電腦 :* ${computerCH} * 請按<<重新開始>>`)
         }, 500)
-        //玩家選擇布按鈕
+        setComputerCH("")
     }
+    //玩家選擇布按鈕
     const clothBTN = () => {
-        setUserCH("布")
+
         alert("Loading...")
         if (computerCH == "布") {
             setResult("平手")
@@ -84,8 +85,9 @@ const GameTest = () => {
         }
         console.log(`電腦 :  ${computerCH}`)
         setTimeout(() => {
-            alert(`電腦 : ${computerCH}  * 請按<<重新開始>>`)
+            alert(`電腦 :* ${computerCH} * 請按<<重新開始>>`)
         }, 500)
+        setComputerCH("")
 
     }
     const resulthBTN = () => {
